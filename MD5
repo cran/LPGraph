@@ -1,0 +1,10 @@
+d3dbc82f18d2ea3568fd72ca28b1aeb4 *DESCRIPTION
+092fd36461e988be7ba94e1e189276ff *NAMESPACE
+d3f71a16b08ca0787282ff1a8a26de6c *R/LP.basis.R
+125bb49a714cb7eb255fc51ffdeeaff2 *R/LPSpectral.R
+5091bde5fdd2b3fa348cfcca0c89cbe4 *build/partial.rdb
+34b6bc2bb9b51313cf502f7bcd77be8f *data/senate.rda
+ab0f5ea4876d442615445432eb266287 *man/LP.basis.Rd
+a357b9928f01ac7082d889cbf4ef17eb *man/LPGraph-package.Rd
+9fcb4679925e4c133e690c8f7c34241c *man/LPSpectral.Rd
+b41c06fffa27a28b9c84b48c430a387b *man/senate.Rd
