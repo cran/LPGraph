@@ -8,12 +8,13 @@ Nonparametric smooth approximation of the Laplacian graph spectra
 This function provides nonparametric smooth approximation of the Laplacian graph spectra given a weighted-adjacency matrix \eqn{W}.
 }
 \usage{
-LPSpectral(W, k, m=8)
+LPSpectral(W, k, m=8,sparse=TRUE)
 }
 \arguments{
   \item{W}{ A \eqn{n}-by-\eqn{n} weighted-adjacency matrix. }
   \item{k}{ Number of approximated singular vectors and singular values to return, where \eqn{k \leq m}.}
   \item{m}{ Number of LP-nonparametric basis used for approximation, where \eqn{m \leq n}. By default, \eqn{m=8}. }
+  \item{sparse}{ Set to \code{TRUE} to make coefficients for LP basis sparse, thus allowing for further smoothing.}
 }
 
 \value{
@@ -32,8 +33,8 @@ LPSpectral(W, k, m=8)
 
    ##1.toy example:
    ##simulate a two sample locational difference normal data:
-    X1<-matrix(rnorm(50,mean=0,sd=1),10,25)
-    X2<-matrix(rnorm(50,mean=0.5,sd=1),10,25)
+    X1<-matrix(rnorm(250,mean=0,sd=1),10,25)
+    X2<-matrix(rnorm(250,mean=0.5,sd=1),10,25)
     X<-rbind(X1,X2)
    ## Adjacency matrix:
     dmat<-dist(X)

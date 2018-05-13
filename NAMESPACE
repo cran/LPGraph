@@ -1,4 +1,5 @@
 exportPattern("^[[:alpha:]]+")
-importFrom("stats", "poly")
+importFrom("stats", "poly", "pnorm", "sd")
 importFrom("SDMTools","wt.mean")
 importFrom("car","wcrossprod")
+importFrom("PMA","SPC","SPC.cv")

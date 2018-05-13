@@ -28,8 +28,8 @@ Mukhopadhyay, S. and Parzen, E. (2014), "LP Approach to Statistical Modeling", a
 
    ##1.toy example:
    ##simulate a two sample locational difference normal data:
-    X1<-matrix(rnorm(50,mean=0,sd=1),10,25)
-    X2<-matrix(rnorm(50,mean=0.5,sd=1),10,25)
+    X1<-matrix(rnorm(250,mean=0,sd=1),10,25)
+    X2<-matrix(rnorm(250,mean=0.5,sd=1),10,25)
     X<-rbind(X1,X2)
    ## Adjacency matrix:
     dmat<-dist(X)
