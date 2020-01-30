@@ -1,9 +1,9 @@
 LP.basis <-
 function(p.dist,m){
    fm <- cumsum(p.dist) - .5*p.dist  #--Fmid
-   sdfmid <- sqrt(SDMTools::wt.mean(fm^2,p.dist) - (SDMTools::wt.mean(fm,p.dist))^2)
+   sdfmid <- sqrt(wt.mean(fm^2,p.dist) - (wt.mean(fm,p.dist))^2)
    m <- min(length(p.dist)-1, m )
-   T1 <- (fm- SDMTools::wt.mean(fm,p.dist))/sdfmid  #--first score function
+   T1 <- (fm- wt.mean(fm,p.dist))/sdfmid  #--first score function
    T <-  as.matrix(stats::poly(T1,m,raw=TRUE))
 
     ##--Gram-Schmidt Orthonormalization (with proper weights)
@@ -14,7 +14,7 @@ function(p.dist,m){
       coef.proj <- c(car::wcrossprod(u[,i],v[,1:(i-1)],  w=p.dist)  ) / 
           diag(car::wcrossprod(v[,1:(i-1)],   w=p.dist)    )
       v[,i] <- u[,i] - matrix(v[,1:(i-1)],nrow=p)%*%matrix(coef.proj,nrow=i-1)
-      v[,i] <- v[,i] - SDMTools::wt.mean(v[,i], p.dist)
+      v[,i] <- v[,i] - wt.mean(v[,i], p.dist)
    }
    coef.proj <- 1/sqrt(diag(car::wcrossprod(v, w=p.dist)))
    v <- t(t(v) * coef.proj)

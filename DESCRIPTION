@@ -1,8 +1,8 @@
 Package: LPGraph
 Type: Package
 Title: Nonparametric Smoothing of Laplacian Graph Spectra
-Version: 2.0
-Date: 2018-05-11
+Version: 2.1
+Date: 2020-01-29
 Author: Subhadeep Mukhopadhyay, Kaijun Wang
 Maintainer: Kaijun Wang <kaijun.wang@temple.edu>
 Description: A nonparametric method to approximate Laplacian graph spectra of a network with 
@@ -10,9 +10,9 @@ Description: A nonparametric method to approximate Laplacian graph spectra of a 
 	accurate and smooth estimate of the graph Laplacian basis. The approximation results can 
 	then be used for tasks like change point detection, k-sample testing, and so on. The 
 	primary reference is Mukhopadhyay, S. and Wang, K. (2018, Technical Report).
-Depends: R (>= 2.10), stats, SDMTools, car, PMA
+Depends: R (>= 3.5.0), stats, car, PMA
 License: GPL-2
 NeedsCompilation: no
-Packaged: 2018-05-11 14:03:38 UTC; AquinasUnit
+Packaged: 2020-01-30 05:34:33 UTC; AquinasUnit
 Repository: CRAN
-Date/Publication: 2018-05-13 03:04:48 UTC
+Date/Publication: 2020-01-30 20:20:02 UTC

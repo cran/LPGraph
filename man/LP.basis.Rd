@@ -1,5 +1,6 @@
 \name{LP.basis}
 \alias{LP.basis}
+\alias{wt.mean}
 
 \title{
   Computes LP basis function of a discrete distribution

@@ -1,5 +1,6 @@
 \name{LP.struct.test}
 \alias{LP.struct.test}
+\alias{Laplacian}
 
 \title{
   Detection of structures in an ordered-network.
